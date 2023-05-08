@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(26, 100%, 55%);
+  --color-primary-pale: hsl(25, 100%, 94%);
+  --color-ver-dark-blue: hsl(220, 13%, 13%);
+  --color-dark-greyish-blue: hsl(219, 9%, 45%);
+  --color-greyish-blue: hsl(220, 14%, 75%);
+  --color-light-greyish-blue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black-75p-opacity: hsl(0, 0%, 0%);
+  --font-pri: "Kumbh Sans", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-pri);
+  font-size: 1.6rem;
+  max-width: 1440px;
+  padding: 0 2rem;
+}
+
+/* header stylings */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid var(--color-primary-pale);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 3rem;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list__item a,
+.header-nav-list__item a:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--color-black-75p-opacity);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right--btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 2rem;
+}
+
+.avartar {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.avartar img {
+  width: 100%;
+  height: 100;
+  border-radius: 50%;
+}
+/* end of header stylings */
+
+/* the body section */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-top: 8rem;
+}
+
+.body__left,
+.body__right {
+  width: 45%;
+}
+
+.body__left--image-main {
+  width: 45rem;
+  /* border: 2px solid green; */
+}
+
+.body__left--image-main img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.thumbnails {
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.thumbnail {
+  --size: 8rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body__right h3 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.body__right h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+.description {
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--color-dark-greyish-blue);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.price {
+  margin-bottom: 2rem;
+}
+
+.price__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price__main {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.price__discount {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  background-color: var(--color-primary-pale);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.price__was {
+  color: var(--color-dark-greyish-blue);
+  text-decoration: line-through;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}
+
+.cta__left {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.cta__left span {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 3rem;
+}
+
+.cta__left button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+
+.cta__right button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border: none;
+  outline: none;
+  padding: 1.5rem 4rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  border-radius: 10px;
+}
+
+.cta__right button img {
+  margin-right: 1rem;
+}
+/* end of the body section */

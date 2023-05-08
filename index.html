@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Author: Dennis Otwoma (github.com/codeme254) -->
+
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <img src="./images/logo.svg" alt="logo" class="header__logo" />
+        <nav class="header-nav">
+          <ol class="header-nav-list">
+            <li class="header-nav-list__item"><a href="">collection</a></li>
+            <li class="header-nav-list__item"><a href="">men</a></li>
+            <li class="header-nav-list__item"><a href="">women</a></li>
+            <li class="header-nav-list__item"><a href="">about</a></li>
+            <li class="header-nav-list__item"><a href="">contact</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="header__right">
+        <button class="header__right--btn">
+          <img src="./images/icon-cart.svg" alt="add to cart" />
+        </button>
+        <div class="avartar">
+          <img
+            src="./images/image-avatar.png"
+            alt="user"
+            class="avartar__image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="body">
+      <div class="body__left">
+        <div class="body__left--image-main">
+          <img src="./images/image-product-1.jpg" alt="product sample" />
+        </div>
+        <div class="thumbnails">
+          <div class="thumbnail">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="first thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="second thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="third thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="fourth thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="body__right">
+        <h3>sneaker company</h3>
+        <h2>fall limited edition sneakers</h2>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div class="price__top">
+            <p class="price__main">$125.00</p>
+            <p class="price__discount">50%</p>
+          </div>
+          <p class="price__was">$250.00</p>
+        </div>
+
+        <div class="cta">
+          <div class="cta__left">
+            <button>-</button>
+            <span>0</span>
+            <button>+</button>
+          </div>
+          <div class="cta__right">
+            <button>
+              <img src="./images/icon-cart.svg" alt="add to cart" />
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
